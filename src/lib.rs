@@ -1,3 +1,35 @@
+/*!
+This crate provides `VariantCount` derive macro for enum which adds to it the `VARIANT_COUNT` constant, containing count of enum variants.
+
+## Example
+
+```rust
+extern crate variant_count;
+
+use variant_count::VariantCount;
+
+#[derive(VariantCount)]
+enum Test {
+    First(i32),
+    Second(Option<String>),
+    Third,
+}
+
+assert_eq!(Test::VARIANT_COUNT, 3);
+```
+
+## Usage
+
+If you're using Cargo, just add it to your Cargo.toml:
+
+```toml
+[dependencies]
+variant_count = "*"
+```
+
+Use `VariantCount` in the `derive` enum attribute.
+!*/
+
 extern crate proc_macro;
 extern crate syn;
 extern crate quote;
