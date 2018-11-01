@@ -1,0 +1,20 @@
+[package]
+name = "variant_count"
+version = "0.1.0"
+authors = ["Alexander Mescheryakov <freecoder.xx@gmail.com>"]
+license = "MIT"
+
+description = "Derive macro for enum which adds to it the count of variants."
+readme = "README.md"
+documentation = "https://docs.rs/variant_count"
+
+repository = "https://github.com/XX/variant_count"
+keywords = ["enum", "derive", "variant", "count"]
+categories = ["rust-patterns"]
+
+[dependencies]
+quote = "0.6"
+syn = "0.15"
+
+[lib]
+proc-macro = true
