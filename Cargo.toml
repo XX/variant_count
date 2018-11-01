@@ -1,6 +1,6 @@
 [package]
 name = "variant_count"
-version = "0.1.0"
+version = "1.0.0"
 authors = ["Alexander Mescheryakov <freecoder.xx@gmail.com>"]
 license = "MIT"
 
