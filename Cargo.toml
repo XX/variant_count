@@ -13,8 +13,8 @@ keywords = ["enum", "derive", "variant", "count"]
 categories = ["rust-patterns"]
 
 [dependencies]
-quote = "0.6"
-syn = "0.15"
+quote = "1.0"
+syn = "1.0"
 
 [lib]
 proc-macro = true
