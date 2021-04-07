@@ -24,15 +24,11 @@ If you're using Cargo, just add it to your Cargo.toml:
 
 ```toml
 [dependencies]
-variant_count = "*"
+variant_count = "1.1"
 ```
 
 Use `VariantCount` in the `derive` enum attribute.
 !*/
-
-extern crate proc_macro;
-extern crate syn;
-extern crate quote;
 
 use proc_macro::TokenStream;
 use syn::DeriveInput;

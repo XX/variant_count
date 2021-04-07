@@ -24,7 +24,7 @@ If you're using Cargo, just add it to your Cargo.toml:
 
 ```toml
 [dependencies]
-variant_count = "*"
+variant_count = "1.1"
 ```
 
 ## License

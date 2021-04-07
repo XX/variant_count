@@ -1,7 +1,5 @@
 #![allow(dead_code)]
 
-extern crate variant_count;
-
 use variant_count::VariantCount;
 
 #[derive(VariantCount)]
