@@ -23,7 +23,7 @@ If you're using Cargo, just add it to your Cargo.toml:
 
 ```toml
 [dependencies]
-variant_count = "1.1"
+variant_count = "1.2"
 ```
 
 Use `VariantCount` in the `derive` enum attribute.
