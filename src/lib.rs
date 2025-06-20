@@ -49,6 +49,7 @@ pub fn variant_count(input: TokenStream) -> TokenStream {
         impl #impl_generics #ty #ty_generics
             #where_clause
         {
+            #[doc = "Number of variants in the enum"]
             #vis const VARIANT_COUNT: usize = #count;
         }
     };
