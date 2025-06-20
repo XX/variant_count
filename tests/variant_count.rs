@@ -14,7 +14,8 @@ mod foo {
 
     #[derive(VariantCount)]
     pub enum TestGen<'a, T: 'a, U>
-        where U: 'a
+    where
+        U: 'a,
     {
         First(T),
         Second(Option<&'a U>),
