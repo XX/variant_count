@@ -53,6 +53,7 @@ fn variant_count_inner(ast: &DeriveInput) -> syn::Result<TokenStream> {
         impl #impl_generics #ty #ty_generics
             #where_clause
         {
+            #[doc = "Number of variants in the enum"]
             #vis const VARIANT_COUNT: usize = #count;
         }
     })
