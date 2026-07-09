@@ -1,0 +1,28 @@
+[config]
+default_to_workspace = false
+
+
+[tasks.fmt-check]
+toolchain = "nightly"
+command = "cargo"
+args = ["fmt", "--check"]
+
+[tasks.fmt]
+toolchain = "nightly"
+command = "cargo"
+args = ["fmt"]
+
+[tasks.clippy]
+toolchain = "stable"
+command = "cargo"
+args = ["clippy", "--all-targets", "--", "-D", "warnings"]
+
+[tasks.lint]
+dependencies = ["fmt-check", "clippy"]
+
+
+[tasks.lint-test]
+toolchain = "stable"
+command = "cargo"
+args = ["test"]
+dependencies = ["lint"]
