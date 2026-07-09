@@ -3,7 +3,7 @@
 [![Crates.io](https://img.shields.io/crates/v/variant_count.svg)](https://crates.io/crates/variant_count)
 [![Docs](https://docs.rs/variant_count/badge.svg)](https://docs.rs/variant_count)
 
-This crate provides `VariantCount` derive macro for enum which adds to it the `VARIANT_COUNT` constant, containing count of enum variants.
+This crate provides the `VariantCount` derive macro, which adds to an enum a `VARIANT_COUNT` constant holding the number of its variants.
 
 The `VariantCount` usage example:
 
